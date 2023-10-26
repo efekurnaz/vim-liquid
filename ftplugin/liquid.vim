@@ -56,6 +56,4 @@ if exists('loaded_matchit')
   let b:match_words .= '\<\%(if\w*\|unless\|case\)\>:\<\%(elsif\|else\|when\)\>:\<end\%(if\w*\|unless\|case\)\>,\<\%(for\|tablerow\)\>:\%({%\s*\)\@<=empty\>:\<end\%(for\|tablerow\)\>,\<\(capture\|comment\|highlight\|schema\|style\)\>:\<end\1\>'
 endif
 
-setlocal commentstring={%\ comment\ %}%s{%\ endcomment\ %}
-
 let b:undo_ftplugin .= 'setl cms< | unlet! b:browsefilter b:match_words'
